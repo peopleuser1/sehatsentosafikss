@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Sehat Sentosa</title>
+    <style>
+    
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Menggunakan font modern seperti Roboto */
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.8;
+    margin: 20px;
+    padding: 0;
+    font-size: 16px; /* Ukuran dasar font */
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: #570606;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Text Section */
+.text {
+    width: 48%;
+    padding: 20px;
+    color: #f5f4f4; /* Warna yang sedikit lebih lembut untuk teks */
+}
+
+/* Title Styles */
+h1.title {
+    font-size: 2.5em;
+    color: #f1f3f5;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold; /* Font lebih tegas untuk judul */
+    animation: slideInFromTop 1s ease-out;
+    text-align: left;
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 1.1em; /* Ukuran font yang sedikit lebih kecil untuk keterbacaan */
+    color: #f6f2f2;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-weight: 400; /* Ketebalan font reguler */
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #802304;
+    color: white;
+    font-size: 1em;
+    font-weight: 500; /* Ketebalan sedang untuk tombol */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #310a04;
+}
+
+/* Image Section */
+.image {
+    width: 50%; /* Perkecil ukuran gambar */
+    perspective: 1800px; /* Perspektif untuk efek 3D */
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.3s ease; /* Tambahkan transisi untuk efek halus */
+    transform-origin: center;
+    margin-right: 20px;
+}
+
+.image img:hover {
+    transform: rotateY(15deg) rotateX(10deg) scale(0.95); /* Efek 3D dan sedikit pengecilan */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Tambahkan bayangan lebih tebal saat hover */
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .text, .image {
+        width: 100%;
+    }
+
+    .image {
+        margin-top: 20px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+      <!-- About Us Section -->
+<div class="container about-us">
+    <div class="text">
+        <h1 class="title">KENAPA TERBENTUK</h1>
+        <p>awal terbentuknya cafe sehat sentosa yaitu trispirasi dari sebuah cafe yang ada di pulau jawa. Berangkat dari sebuah keresahan Tn. Yogi Dwi Irwanto (as founder) dimana, menurut kacamata beliau sudah terlalu banyak tempat makan khususnya di lampung yang selalu mengangkat tema/konsep kebarat-baratan. mulai dari nama tempat, suasana tempat, hingga nama menu yang di tawarkan selalu dikaitkan dengan budaya barat.
+
+            buah dari keresahan itu, munculah ide membuat tempat makan yang membumi dari nama, suasana, hungga menu yang di tawarkan. setelah proses yang cukup panjang mulai dari riset sampai dapat konsep, akhirnya Tn. Yogi memilih nama "SEHAT SENTOSA" yang artinya sebuah do'a untuk kita semua.</p>
+    </div>
+    <div class="image">
+        <img src="ss.jpeg" alt="Sehat Sentosa" class="about-image">
+    </div>
+</div>
+
+<!-- Concept Section -->
+<div class="container concept">
+
+    <div class="text">
+        <h1 class="title">KONSEP</h1>
+        <style>
+            /* Styling for Address and Instagram Link */
+.image .info {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1em;
+    color: #555;
+}
+
+.image .info a {
+    color: #802304;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.image .info a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styling */
+.image .button {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #802304;
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: fit-content;
+}
+
+.image .button:hover {
+    background-color: #310a04;
+    transform: scale(1.05);
+}
+
+        </style>
+        <p>Rumah bertumbuh adalah salah satu konsep yang diambil untuk rumah makan "SEHAT SENTOSA". Selain itu, dekorasi dan suasana yang akan disajikan harapannya bisa menjadi rumah ketiga setelah rumah utama dan tempat kerja/kantor. Untuk menu yang ditawarkan yaitu menu "Masakan Rumahan" yang dijamin bikin nyaman. Layanan mandiri akan diterapkan pada konsep pelayanan, mulai dari pesan menu hingga selesai makan pelanggan diwajibkan menaruh kembali piring dan gelas pada tempat yang telah disediakan untuk memberikan pengalaman yang berbeda dari tempat makan pada umumnya serta kesan "RUMAH".</p>
+    </div>
+    
+    <div class="image">
+        <img src="konsep.jpeg" alt="Concept" class="concept-image">
+        <div class="info">
+            <p>Alamat: Jln.Dokter Harun || no.105, Kec TanjungKarang Timur,BandarLampung</p>
+            <p>Instagram: <a href="https://www.instagram.com/sehatsentossa?igsh=NHJhN2dkdWVmcWJs" target="_blank">@sehatsentosa</a></p>
+        </div>
+        <a href="index.html" class="button">Kembali ke Home</a>
+    </div>
+
+</div>
+
+</div>
+ </head>
+ </body>

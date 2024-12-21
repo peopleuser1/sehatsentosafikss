@@ -1,0 +1,232 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('background.jpeg'); /* Dominant black background */
+    color: #fff; /* White text for contrast */
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh; /* Ensure the body covers the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* CSS untuk Video Section */
+/* CSS untuk Video Section */
+.video-container {
+    width: 70%;
+    max-height: 500px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+.promo-video {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Responsif untuk perangkat mobile */
+@media (max-width: 768px) {
+    .video-container {
+        width: 90%;
+        max-height: 300px;
+    }
+
+    .promo-video {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+        
+    
+}
+
+/* Main Container */
+.container {
+    max-width: 400px; /* Default size for larger screens */
+    width: 90%; /* Ensure it adjusts on smaller screens */
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #620303;
+    background-size: cover; /* Cover the container */
+    border-radius: 30px;
+    box-shadow: 0 8px 16px rgba(228, 225, 225, 0.8);
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 10px 10px 20px rgba(239, 234, 234, 0.8), -6px -6px 12px rgba(249, 246, 246, 0.2);
+    transform: translateY(-8px);
+}
+
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #e1e1e1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.logo-image {
+    max-width: 100px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Home Image */
+.home-image {
+    width: 100%; /* Full width */
+    height: auto;
+    max-height: 70vh; /* Limit height to 70% of the viewport */
+    object-fit: cover; /* Ensure the image scales correctly */
+    margin-bottom: 20px; /* Add spacing below the image */
+}
+
+/* About Us Section */
+.about-us {
+    max-width: 800px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #222; /* Even darker gray for contrast */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    color: #1a1818; /* Light gray text */
+}
+
+.about-us img {
+    width: 100%;
+    max-width: 400px; /* Limit image size */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(245, 243, 243, 0.7);
+}
+
+.about-us p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(171, 162, 162, 0.874);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.5);
+    filter: brightness(1.9);
+}
+
+/* Button */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.button {
+    background: linear-gradient(to bottom, #f1efef, #716e6e);
+    color: #080808;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.7em;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7), -2px -2px 4px rgba(255, 255, 255, 0.1);
+    transition: all 0.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.button:hover {
+    background: linear-gradient(to bottom, #620303, #800404);
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5), -6px -6px 10px rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+.button:active {
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.3), inset -2px -2px 4px rgba(255, 255, 255, 0.1);
+    transform: translateY(1px);
+}
+
+/* Ripple Effect */
+.ripple {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: scale(0);
+    animation: ripple-animation 0.6s ease-out;
+    z-index: 1;
+}
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(10);
+        opacity: 0;
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        padding: 15px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+    }
+
+    .button {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        padding: 10px;
+    }
+
+    .button {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+}
